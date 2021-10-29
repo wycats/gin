@@ -1,0 +1,19 @@
+
+[package]
+name = "gin"
+version = "0.1.0"
+edition = "2021"
+
+
+[workspace]
+members = ["crates/*"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+gin-macros = { version = "0.1.0", path = "./crates/gin-macros" }
+gin-macros-internals = { version = "0.1.0", path = "./crates/gin-macros-internals" }
+prost = "0.9.0"
+prost-types = "0.9.0"
+static_assertions = "1.1.0"
+tonic = "0.6.1"
